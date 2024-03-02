@@ -1,0 +1,279 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Pham Duong, Hust, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.38.0.0
+Toolchain Path:  E:\Keil C\Keil C\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.19
+Assembler:       Armasm.exe V6.19
+Linker/Locator:  ArmLink.exe V6.19
+Library Manager: ArmAr.exe V6.19
+Hex Converter:   FromElf.exe V6.19
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.1.0.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+E:\Keil C\test\test.uvprojx
+Project File Date:  01/22/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.19', folder: 'E:\Keil C\Keil C\ARM\ARMCLANG\Bin'
+Rebuild target 'Target 1'
+assembling startup_stm32f10x_md.s...
+../STM32_libs-master/STM32_libs-master/111-STM32F1-1602 LCD I2C Library/PCF8574_drive.c(1): warning: In file included from...
+../STM32_libs-master/STM32_libs-master/111-STM32F1-1602 LCD I2C Library/PCF8574_drive.h(1): warning: In file included from...
+../STM32_libs-master/STM32_libs-master/111-STM32F1-1602 LCD I2C Library/i2c_drive.h(1): warning: In file included from...
+E:/Keil C/Pack/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+E:/Keil C/Pack/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+E:/Keil C/Pack/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+../STM32_libs-master/STM32_libs-master/111-STM32F1-1602 LCD I2C Library/PCF8574_drive.c(4): warning: no previous prototype for function 'PCF8574_add' [-Wmissing-prototypes]
+void PCF8574_add(char i2c, char R_W)
+     ^
+../STM32_libs-master/STM32_libs-master/111-STM32F1-1602 LCD I2C Library/PCF8574_drive.c(4): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void PCF8574_add(char i2c, char R_W)
+^
+static 
+4 warnings generated.
+compiling PCF8574_drive.c...
+../STM32_libs-master/STM32_libs-master/111-STM32F1-1602 LCD I2C Library/systick_time.c(1): warning: In file included from...
+E:/Keil C/Pack/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+E:/Keil C/Pack/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+E:/Keil C/Pack/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+../STM32_libs-master/STM32_libs-master/111-STM32F1-1602 LCD I2C Library/systick_time.c(27): warning: no previous prototype for function 'DelayMillis' [-Wmissing-prototypes]
+void DelayMillis(void)
+     ^
+../STM32_libs-master/STM32_libs-master/111-STM32F1-1602 LCD I2C Library/systick_time.c(27): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void DelayMillis(void)
+^
+static 
+4 warnings generated.
+compiling systick_time.c...
+main.c(2): warning: In file included from...
+E:/Keil C/Pack/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+E:/Keil C/Pack/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+E:/Keil C/Pack/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+main.c(203): warning: // comments are not allowed in this language [-Wcomment]
+        //system_init();
+        ^
+main.c(129): warning: unused function 'system_init' [-Wunused-function]
+static void system_init(void){
+            ^
+5 warnings generated.
+compiling main.c...
+../STM32_libs-master/STM32_libs-master/111-STM32F1-1602 LCD I2C Library/gp_drive.c(10): warning: In file included from...
+E:/Keil C/Pack/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+E:/Keil C/Pack/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+E:/Keil C/Pack/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+../STM32_libs-master/STM32_libs-master/111-STM32F1-1602 LCD I2C Library/gp_drive.c(44): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+        *CR &= ~(0xf<<(tPin)*4);
+            ~~ ^~~~~~~~~~~~~~~~
+../STM32_libs-master/STM32_libs-master/111-STM32F1-1602 LCD I2C Library/gp_drive.c(45): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+        *CR |= ((DIR<<(tPin*4)) | (OPT<<(tPin*4+2)));
+            ~~  ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+../STM32_libs-master/STM32_libs-master/111-STM32F1-1602 LCD I2C Library/gp_drive.c(38): warning: variable 'CR' is used uninitialized whenever 'if' condition is false [-Wsometimes-uninitialized]
+        else if(PORT == 3)
+                ^~~~~~~~~
+../STM32_libs-master/STM32_libs-master/111-STM32F1-1602 LCD I2C Library/gp_drive.c(44): note: uninitialized use occurs here
+        *CR &= ~(0xf<<(tPin)*4);
+         ^~
+../STM32_libs-master/STM32_libs-master/111-STM32F1-1602 LCD I2C Library/gp_drive.c(38): note: remove the 'if' if its condition is always true
+        else if(PORT == 3)
+             ^~~~~~~~~~~~~
+../STM32_libs-master/STM32_libs-master/111-STM32F1-1602 LCD I2C Library/gp_drive.c(16): note: initialize the variable 'CR' to silence this warning
+        volatile unsigned long * CR;
+                                   ^
+                                    = 0
+../STM32_libs-master/STM32_libs-master/111-STM32F1-1602 LCD I2C Library/gp_drive.c(66): warning: implicit conversion changes signedness: 'unsigned long' to 'int' [-Wsign-conversion]
+                state =  ((*IDR & (1<<pin))>>pin)  ;
+                      ~   ~~~~~~~~~~~~~~~~~^~~~~
+../STM32_libs-master/STM32_libs-master/111-STM32F1-1602 LCD I2C Library/gp_drive.c(62): warning: variable 'IDR' is used uninitialized whenever 'if' condition is false [-Wsometimes-uninitialized]
+        else if(PORT == 3)
+                ^~~~~~~~~
+../STM32_libs-master/STM32_libs-master/111-STM32F1-1602 LCD I2C Library/gp_drive.c(66): note: uninitialized use occurs here
+                state =  ((*IDR & (1<<pin))>>pin)  ;
+                            ^~~
+../STM32_libs-master/STM32_libs-master/111-STM32F1-1602 LCD I2C Library/gp_drive.c(62): note: remove the 'if' if its condition is always true
+        else if(PORT == 3)
+             ^~~~~~~~~~~~~
+../STM32_libs-master/STM32_libs-master/111-STM32F1-1602 LCD I2C Library/gp_drive.c(50): note: initialize the variable 'IDR' to silence this warning
+        volatile unsigned long * IDR;
+                                    ^
+                                     = 0
+../STM32_libs-master/STM32_libs-master/111-STM32F1-1602 LCD I2C Library/gp_drive.c(87): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+        STATUS ? (*ODR |= (STATUS<<pin)) : (*ODR &= ~(1<<pin));
+                       ~~  ~~~~~~^~~~~
+../STM32_libs-master/STM32_libs-master/111-STM32F1-1602 LCD I2C Library/gp_drive.c(87): warning: variable 'ODR' may be uninitialized when used here [-Wconditional-uninitialized]
+        STATUS ? (*ODR |= (STATUS<<pin)) : (*ODR &= ~(1<<pin));
+                   ^~~
+../STM32_libs-master/STM32_libs-master/111-STM32F1-1602 LCD I2C Library/gp_drive.c(73): note: initialize the variable 'ODR' to silence this warning
+        volatile unsigned long * ODR;
+                                    ^
+                                     = 0
+../STM32_libs-master/STM32_libs-master/111-STM32F1-1602 LCD I2C Library/gp_drive.c(108): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        STATUS ? (GPIOC->ODR |= (STATUS<<pin)) : (GPIOC->ODR &= ~(1<<pin));
+                             ~~  ~~~~~~^~~~~
+11 warnings generated.
+compiling gp_drive.c...
+../STM32_libs-master/STM32_libs-master/111-STM32F1-1602 LCD I2C Library/lcd_1602_drive.c(1): warning: In file included from...
+../STM32_libs-master/STM32_libs-master/111-STM32F1-1602 LCD I2C Library/lcd_1602_drive.h(3): warning: In file included from...
+E:/Keil C/Pack/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+E:/Keil C/Pack/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+E:/Keil C/Pack/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+../STM32_libs-master/STM32_libs-master/111-STM32F1-1602 LCD I2C Library/lcd_1602_drive.c(95): warning: // comments are not allowed in this language [-Wcomment]
+        GPIOA->ODR |= 0x30; // 8 bit communication mode 
+                            ^
+../STM32_libs-master/STM32_libs-master/111-STM32F1-1602 LCD I2C Library/lcd_1602_drive.c(168): warning: implicit conversion loses integer precision: 'int' to 'unsigned char' [-Wimplicit-int-conversion]
+        lcd_cmd(0x80 +pos + pos_0_16);
+        ~~~~~~~ ~~~~~~~~~~^~~~~~~~~~
+../STM32_libs-master/STM32_libs-master/111-STM32F1-1602 LCD I2C Library/lcd_1602_drive.c(332): warning: implicit conversion loses integer precision: 'int' to 'unsigned char' [-Wimplicit-int-conversion]
+        lcd_i2c_cmd(i2c,0x80 +pos + pos_0_16);
+        ~~~~~~~~~~~     ~~~~~~~~~~^~~~~~~~~~
+6 warnings generated.
+compiling lcd_1602_drive.c...
+../STM32_libs-master/STM32_libs-master/111-STM32F1-1602 LCD I2C Library/i2c_drive.c(1): warning: In file included from...
+../STM32_libs-master/STM32_libs-master/111-STM32F1-1602 LCD I2C Library/i2c_drive.h(1): warning: In file included from...
+E:/Keil C/Pack/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+E:/Keil C/Pack/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+E:/Keil C/Pack/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+../STM32_libs-master/STM32_libs-master/111-STM32F1-1602 LCD I2C Library/i2c_drive.c(16): warning: // comments are not allowed in this language [-Wcomment]
+// i2c_init()
+^
+../STM32_libs-master/STM32_libs-master/111-STM32F1-1602 LCD I2C Library/i2c_drive.c(56): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                while (!(I2C1->SR1 & 1)){};
+                                          ^
+../STM32_libs-master/STM32_libs-master/111-STM32F1-1602 LCD I2C Library/i2c_drive.c(61): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                while (!(I2C2->SR1 & 1)){};
+                                          ^
+../STM32_libs-master/STM32_libs-master/111-STM32F1-1602 LCD I2C Library/i2c_drive.c(71): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                while((I2C1->SR1 & 2)==0){};
+                                           ^
+../STM32_libs-master/STM32_libs-master/111-STM32F1-1602 LCD I2C Library/i2c_drive.c(84): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                while((I2C2->SR1 & 2)==0){};
+                                           ^
+../STM32_libs-master/STM32_libs-master/111-STM32F1-1602 LCD I2C Library/i2c_drive.c(67): warning: variable 'tmp' set but not used [-Wunused-but-set-variable]
+        volatile int tmp;
+                     ^
+../STM32_libs-master/STM32_libs-master/111-STM32F1-1602 LCD I2C Library/i2c_drive.c(115): warning: variable 'tmp' set but not used [-Wunused-but-set-variable]
+        volatile int tmp;
+                     ^
+../STM32_libs-master/STM32_libs-master/111-STM32F1-1602 LCD I2C Library/i2c_drive.c(154): warning: implicit conversion loses integer precision: 'volatile uint16_t' (aka 'volatile unsigned short') to 'char' [-Wimplicit-int-conversion]
+                        temp = I2C1->DR;
+                             ~ ~~~~~~^~
+../STM32_libs-master/STM32_libs-master/111-STM32F1-1602 LCD I2C Library/i2c_drive.c(165): warning: implicit conversion loses integer precision: 'volatile uint16_t' (aka 'volatile unsigned short') to 'char' [-Wimplicit-int-conversion]
+                        temp = I2C2->DR;
+                             ~ ~~~~~~^~
+../STM32_libs-master/STM32_libs-master/111-STM32F1-1602 LCD I2C Library/i2c_drive.c(161): warning: variable 'temp' is used uninitialized whenever 'if' condition is false [-Wsometimes-uninitialized]
+        else if(i2c==2)
+                ^~~~~~
+../STM32_libs-master/STM32_libs-master/111-STM32F1-1602 LCD I2C Library/i2c_drive.c(172): note: uninitialized use occurs here
+        return temp;
+               ^~~~
+../STM32_libs-master/STM32_libs-master/111-STM32F1-1602 LCD I2C Library/i2c_drive.c(161): note: remove the 'if' if its condition is always true
+        else if(i2c==2)
+             ^~~~~~~~~~
+../STM32_libs-master/STM32_libs-master/111-STM32F1-1602 LCD I2C Library/i2c_drive.c(149): note: initialize the variable 'temp' to silence this warning
+        char temp;
+                 ^
+                  = '\0'
+13 warnings generated.
+compiling i2c_drive.c...
+RTE/Device/STM32F103C8/system_stm32f10x.c(64): warning: In file included from...
+E:/Keil C/Pack/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+E:/Keil C/Pack/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+E:/Keil C/Pack/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+RTE/Device/STM32F103C8/system_stm32f10x.c(166): warning: no previous extern declaration for non-static variable 'AHBPrescTable' [-Wmissing-variable-declarations]
+__I uint8_t AHBPrescTable[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9};
+            ^
+RTE/Device/STM32F103C8/system_stm32f10x.c(166): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+__I uint8_t AHBPrescTable[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9};
+    ^
+4 warnings generated.
+compiling system_stm32f10x.c...
+linking...
+Program Size: Code=10456 RO-data=1332 RW-data=0 ZI-data=1664  
+FromELF: creating hex file...
+".\Objects\test.axf" - 0 Error(s), 47 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.1.pack
+                Keil.STM32F1xx_DFP.2.4.1
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 1.0.0
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/Device/STM32F103C8
+  ./RTE/_Target_1
+  E:/Keil C/Pack/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  E:/Keil C/Pack/Keil/STM32F1xx_DFP/2.4.1/Device/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+
+   * Component: Keil::Device:Startup:1.0.0
+      Source file:   Device/Source/system_stm32f10x.c
+      Source file:   Device/Source/ARM/startup_stm32f10x_md.s
+      Include file:  RTE_Driver/Config/RTE_Device.h
+      Source file:   Device/Source/ARM/STM32F1xx_OPT.s
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
